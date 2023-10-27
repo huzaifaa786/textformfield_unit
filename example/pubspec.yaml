@@ -3,7 +3,7 @@ description: Demonstrates how to use the textformfield_unit plugin.
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.1.4 <4.0.0'
+  sdk: ">=2.17.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
