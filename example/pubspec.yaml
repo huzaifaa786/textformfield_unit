@@ -1,0 +1,27 @@
+name: textformfield_unit_example
+description: Demonstrates how to use the textformfield_unit plugin.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.4 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  textformfield_unit: ^1.0.0
+  flutter_lints: ^3.0.0
+
+dependency_overrides:
+  textformfield_unit:
+    path: ../
+
+flutter:
+  uses-material-design: true
