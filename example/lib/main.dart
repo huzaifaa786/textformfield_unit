@@ -41,7 +41,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    controller = TextEditingController(text: NumberFormat.decimalPattern().format(156.25));
+    controller = TextEditingController(
+        text: NumberFormat.decimalPattern().format(156.25));
   }
 
   @override
@@ -86,7 +87,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     TextFormUnitField<SizeUnits>(
                       controller: controller,
                       keyboardType: TextInputType.number,
-                      inputFormatters: [FilteringTextInputFormatter.allow(allowed)],
+                      inputFormatters: [
+                        FilteringTextInputFormatter.allow(allowed)
+                      ],
                       textInputAction: TextInputAction.next,
                       icon: const Icon(Icons.height),
                       labelText: 'Size',
@@ -95,7 +98,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       unitIcon: const Icon(Icons.keyboard_arrow_down),
                       converter: _sizeConverter,
                       onSaved: (value) {
-                        if (value != null) print('${value.value} ${unitNames[value.unit]}');
+                        if (value != null)
+                          print('${value.value} ${unitNames[value.unit]}');
                       },
                     ),
                   ],
