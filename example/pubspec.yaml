@@ -10,14 +10,14 @@ dependencies:
   flutter:
     sdk: flutter
 
-  intl: ^0.18.1
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  textformfield_unit: ^1.0.0
-  flutter_lints: ^3.0.0
+  textformfield_unit: ^1.0.2
+  flutter_lints: ^3.0.2
 
 dependency_overrides:
   textformfield_unit:
