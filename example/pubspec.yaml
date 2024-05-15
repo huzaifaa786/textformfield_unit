@@ -17,7 +17,7 @@ dev_dependencies:
     sdk: flutter
 
   textformfield_unit: ^1.0.2
-  flutter_lints: ^3.0.2
+  flutter_lints: ^4.0.0
 
 dependency_overrides:
   textformfield_unit:
