@@ -12,6 +12,7 @@ class TextFormUnitField<TUnit> extends StatefulWidget {
   // Text field
   final TextEditingController controller;
   final String? initialValue;
+  final InputBorder? border;
   final FocusNode? textFocusNode;
   final TextInputType? keyboardType;
   final TextCapitalization textCapitalization;
@@ -106,6 +107,7 @@ class TextFormUnitField<TUnit> extends StatefulWidget {
   const TextFormUnitField({
     super.key,
     required this.controller,
+    required this.border,
     this.initialValue,
     this.textFocusNode,
     this.keyboardType,
@@ -224,6 +226,9 @@ class _TextFormUnitFieldState<TUnit> extends State<TextFormUnitField<TUnit>> {
           labelText: widget.labelText,
           icon: widget.icon,
           enabled: widget.enabled ?? true,
+          border: widget.border,
+          enabledBorder: widget.border,
+          focusedBorder: widget.border,
           suffix: DropdownButtonHideUnderline(
             child: DropdownButton<TUnit>(
               items: [
